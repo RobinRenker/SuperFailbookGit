@@ -9,7 +9,7 @@ class UserModel extends Model
     {
         $password = sha1($password);
 
-
+		
 
         $query = "INSERT INTO $this->tableName (Name, Vorname, age, EMail, Telefon, Beruf, Passwort) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
